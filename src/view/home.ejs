@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container" id="c1">
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand col-sm-6" href="#" id="nn">YOUR<b> WEBSITE</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-sm-6" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" id="nn">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="nn">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="nn">Work Info</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" ><button class="btn btn-light" id="btnn">get started</button></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          </header>
+          <div class="row" id="r1"></div>
+          <div class="row">
+              <div class="col-sm-6"><h1 id="hh1">Inspirational<br>Quotes</h1><br>
+
+            <p id="qqq">wecome to short insipirational quotes....</p>
+            <br>
+            <button type="submit" class="btn btn-light" id="btnn" onclick=" randomQuote()">Quotes</button>
+        </div>
+          </div><br>
+    </div>
+    <style>
+#nn{
+    color: blueviolet;
+    font-weight: bold;
+    
+}
+#btnn{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 50px;
+    position: sticky;
+}
+#hh1{
+    color: rgb(68, 6, 126);
+    font-weight: bold;
+    font-size: 55px;
+}
+#r1{
+    height:60px
+}
+#c1{
+    background-image: url("https://th.bing.com/th/id/OIP.5af8SNKCE1Fc8pxwfHHDKAHaFj?pid=ImgDet&w=2896&h=2172&rs=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 500px;
+}
+body{
+    background-image: url("https://image.freepik.com/free-vector/halftone-star-pattern-background-vector-graphic-design-with-curved-stars-varying-sizes_1164-1564.jpg");
+}
+    </style>
+    <script>
+        function randomQuote() {
+            
+            
+            const arr=[
+    " we become what we think about",
+
+    "where there is will there is a way",
+
+
+    "Believe you can and you’re halfway there",
+    "A journey, I reflected, is of no merit unless it has tested you.",
+    "A text is evolutionary by its very nature.",
+    "A text always remains in crucial ways ‘imperceptible’.",
+    "Don’t tell people your plans. Show them your results",
+    "When nothing goes right, go left.","Leave no stone unturned."
+]
+//   var listLength =  Object.keys(arr).length;
+  var randVal = Math.floor(Math.random() * (arr.length));
+//   document.write(quotesList[randVal]);
+document.getElementById("qqq").innerHTML=arr[randVal]
+}
+    </script>
+</body>
+</html>
+
